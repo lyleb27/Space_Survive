@@ -1,21 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Collections.LowLevel.Unsafe;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonScript : MonoBehaviour
 {
-    public void ButtonStart()
+    public Button buttonStart;
+    public Button buttonExit;
+
+    void Start()
     {
-       SceneManager.LoadScene("Game"); 
+        buttonStart = GameObject.Find("ButtonStart").GetComponent<Button>();
+        buttonExit = GameObject.Find("ButtonExit").GetComponent<Button>();
+
     }
 
-    public void ButtonExit() 
+
+    public void Restart()
     {
-        Debug.Log("Exit Game");
+        SceneManager.LoadScene("Game");
+    }
+
+    public void Exit()
+    {
         Application.Quit();
     }
 }

@@ -10,7 +10,7 @@ public class AsteroidController : MonoBehaviour
     {
         transform.Translate(Vector2.down * speed * Time.deltaTime);
 
-        if (transform.position.y < -5)
+        if (transform.position.y < -5.75f)
         {
             Destroy(gameObject);
         }
