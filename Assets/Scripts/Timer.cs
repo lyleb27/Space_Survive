@@ -10,14 +10,13 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        tempsÉcoulé = PlayerPrefs.GetFloat("TempsEcoule", 0.0f);
-
-        texteTemps.text = "Temps écoulé : " + tempsÉcoulé.ToString("F1") + "s";
+        texteTemps.text = "Temps écoulé : 0s";
     }
 
     void Update()
     {
         tempsÉcoulé += Time.deltaTime;
+
         texteTemps.text = "Temps écoulé : " + tempsÉcoulé.ToString("F1") + "s";
     }
 }

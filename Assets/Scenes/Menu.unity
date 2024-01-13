@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.49019608, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -415,7 +415,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 1, b: 0.71942496, a: 0}
+  m_BackGroundColor: {r: 0.13725491, g: 0.039215688, b: 0.78431374, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -580,12 +580,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2126592199}
     - target: {fileID: 7341669763860243838, guid: a4e2fc8727d96b74cb23f5700238ebd1, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341669763860243838, guid: a4e2fc8727d96b74cb23f5700238ebd1, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341669763860243838, guid: a4e2fc8727d96b74cb23f5700238ebd1, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.49019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341669763860243838, guid: a4e2fc8727d96b74cb23f5700238ebd1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 9206528593838261811, guid: a4e2fc8727d96b74cb23f5700238ebd1, type: 3}
     - target: {fileID: 9206528593838261811, guid: a4e2fc8727d96b74cb23f5700238ebd1, type: 3}
       propertyPath: m_Name
-      value: Button Exit
+      value: ButtonExit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -601,6 +613,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 448523132}
     m_Modifications:
     - target: {fileID: 931969891555820520, guid: ed8831beefb1e2442814e81c6ece70a0, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 931969891555820520, guid: ed8831beefb1e2442814e81c6ece70a0, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 931969891555820520, guid: ed8831beefb1e2442814e81c6ece70a0, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.49019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 931969891555820520, guid: ed8831beefb1e2442814e81c6ece70a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: -4708599758156953827, guid: ed8831beefb1e2442814e81c6ece70a0, type: 3}
@@ -608,9 +632,25 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Restart
       objectReference: {fileID: 0}
+    - target: {fileID: 3503405197415645894, guid: ed8831beefb1e2442814e81c6ece70a0, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503405197415645894, guid: ed8831beefb1e2442814e81c6ece70a0, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503405197415645894, guid: ed8831beefb1e2442814e81c6ece70a0, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503405197415645894, guid: ed8831beefb1e2442814e81c6ece70a0, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6024946751138731923, guid: ed8831beefb1e2442814e81c6ece70a0, type: 3}
       propertyPath: m_Name
-      value: Button Start
+      value: ButtonStart
       objectReference: {fileID: 0}
     - target: {fileID: 7679128549133677999, guid: ed8831beefb1e2442814e81c6ece70a0, type: 3}
       propertyPath: m_Pivot.x

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MeteorSpawner : MonoBehaviour
 {
-    public GameObject meteorPrefab; // assign your meteor prefab in the inspector
-    public float spawnRate = 5f; // meteors per second
+    public GameObject meteorPrefab;
+    public float spawnRate = 1f; 
 
     private void Start()
     {
@@ -16,6 +16,7 @@ public class MeteorSpawner : MonoBehaviour
     {
         while (true)
         {
+            Debug.Log("Spawning meteor at " + Time.time);
             Instantiate(meteorPrefab, GenerateRandomPosition(), Quaternion.identity);
             yield return new WaitForSeconds(1f / spawnRate);
         }
@@ -23,11 +24,11 @@ public class MeteorSpawner : MonoBehaviour
 
     private Vector2 GenerateRandomPosition()
     {
-        // generate a random position within a certain radius
-        // adjust this to fit your game
+
         float x = Random.Range(-11f, 11f);
         float y = 5.75f;
 
         return new Vector2(x, y);
     }
+
 }
